@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MillionManagement</name>
+    </assembly>
+    <members>
+        <member name="M:MillionManagement.Controllers.OwnerController.CreateOwnerDto(Domain.Dto.OwnerDto)">
+            <summary>
+            Crea un nuevo propietario.
+            </summary>
+            <param name="payload">Información del propietario a crear.</param>
+            <returns>Una respuesta con los detalles del propietario creado.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.OwnerController.GetPaginatedPropertiesAsync(Domain.Request.PaginationPayload)">
+            <summary>
+            Obtiene una lista de propietarios o un usuario especifico si se envia el documento.
+            </summary>
+            <param name="payload">Opcional, documento para filtrar propietarios.</param>
+            <returns>Una respuesta con la lista de propietarios.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.PropertyController.CreateProperty(Domain.Request.PropertyPayload)">
+            <summary>
+            Crea una nueva propiedad.
+            </summary>
+            <param name="payload">Información de la propiedad a crear.</param>
+            <returns>Una respuesta con los detalles del proceso de  creado.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.PropertyController.GetPaginatedPropertiesAsync(Domain.Request.PaginationPayload)">
+            <summary>
+            Obtener Una propiedad.
+            </summary>
+            <param name="payload">Información de la propiedad a crear.</param>
+            <returns>Una respuesta con los detalles del proceso de  creado.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.PropertyController.UpdateProperty(Domain.Request.UpdatePropertyPayload)">
+            <summary>
+            Actualizar campos de la propiedad.
+            </summary>
+            <param name="payload">Información de la propiedad a crear.</param>
+            <returns>Una respuesta con los detalles del proceso de  actualizacion.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.PropertyImageController.CreatePropertyImage(Domain.Request.PropertyImagePayload)">
+            <summary>
+            Crea una nueva propiedad.
+            </summary>
+            <param name="payload">Información de la propiedad a crear.</param>
+            <returns>Una respuesta con los detalles del proceso de  creado.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.PropertyImageController.GetPaginatedPropertiesAsync(Domain.Request.PaginationPayload)">
+            <summary>
+            Consulta lista de propiedades o filtyra por lo campos del modelo.
+            </summary>
+            <param name="payload">Información de la propiedad consultada.</param>
+            <returns>Una respuesta con los detalles del proceso de  creado.</returns>
+        </member>
+        <member name="M:MillionManagement.Controllers.PropertyImageController.UpdatePropetyImage(Domain.Request.UpdatePropertyImagePayload)">
+            <summary>
+            Actualiza propiedades del modelo.
+            </summary>
+            <param name="payload">Información de la propiedad consultada.</param>
+            <returns>Una respuesta con los detalles del proceso de  creado.</returns>
+        </member>
+    </members>
+</doc>

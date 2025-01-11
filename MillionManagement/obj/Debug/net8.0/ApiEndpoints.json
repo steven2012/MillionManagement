@@ -1,0 +1,301 @@
+[
+  {
+    "ContainingType": "MillionManagement.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Domain.Request.LoginPayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.OwnerController",
+    "Method": "CreateOwnerDto",
+    "RelativePath": "api/Owner",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "Domain.Dto.OwnerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.OwnerDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.OwnerController",
+    "Method": "GetPaginatedPropertiesAsync",
+    "RelativePath": "api/Owner",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ItemsPerPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortDirection",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PaginatedResponseDto\u00601[[Domain.Dto.OwnerDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.PropertyController",
+    "Method": "CreateProperty",
+    "RelativePath": "api/Property",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "Domain.Request.PropertyPayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PropertyDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.PropertyController",
+    "Method": "GetPaginatedPropertiesAsync",
+    "RelativePath": "api/Property",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ItemsPerPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortDirection",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PaginatedResponseDto\u00601[[Domain.Dto.PropertyDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.PropertyController",
+    "Method": "UpdateProperty",
+    "RelativePath": "api/Property",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "Domain.Request.UpdatePropertyPayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PropertyDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.PropertyImageController",
+    "Method": "CreatePropertyImage",
+    "RelativePath": "api/PropertyImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "Domain.Request.PropertyImagePayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PropertyImageDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.PropertyImageController",
+    "Method": "GetPaginatedPropertiesAsync",
+    "RelativePath": "api/PropertyImage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ItemsPerPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortDirection",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterProperty",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FilterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PaginatedResponseDto\u00601[[Domain.Dto.PropertyImageDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MillionManagement.Controllers.PropertyImageController",
+    "Method": "UpdatePropetyImage",
+    "RelativePath": "api/PropertyImage",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "Domain.Request.UpdatePropertyImagePayload",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Domain.common.ApiResponse\u00601[[Domain.Dto.PropertyImageDto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
