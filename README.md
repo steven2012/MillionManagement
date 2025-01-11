@@ -33,7 +33,7 @@ Es importante comenzar con la migración de la base de datos para crear las tabl
 
 1. **Ejecutar `Add-Migration Initial`**: Se crea la migración en el proyecto `Infraestructura`, asociada al proyecto `MillionManagement`.
 2. **Ejecutar `Update-Database`**: Aplica las migraciones y crea las tablas en la base de datos MySQL.
-3. **Ver el video del demo**: Para más detalles sobre cómo ejecutar las migraciones correctamente.
+3. **Ver el video del demo**: Para más detalles sobre cómo ejecutar las migraciones correctamente y el manejo de las apis.
 
 De esta forma, ya tienes toda la información organizada en el `README.md`, y los comandos están claros para realizar la migración y crear las tablas en la base de datos MySQL.
     
